@@ -1,0 +1,23 @@
+body {
+    font-family: helvetica;
+    margin:0;
+    padding:0;
+    background-color:skyblue;
+    color:green;
+}
+#container (
+padding:50px;
+width: 500px;
+)
+.link {
+    list-style: none;
+    color:lightgreen;
+    font-size:2em;
+}
+a{
+    color:lightgreen;
+    transition:color 500ms;
+}
+a:hover {
+    color:white;
+} 
