@@ -3,6 +3,7 @@ function setup() {
 }
 
 var lion; // global
+var pride; //global
 
 function preload() {
     lion = loadImage("Lion.jpg")
@@ -15,7 +16,9 @@ function draw() {
     
     fill(255);
     textAlign(CENTER, CENTER);
-    textSize(100);
+    textSize(45);
     textFont("Comic Sans MS");
-    text("Yurr you talking shit", width/2, 750);
+    text("When you they say food is done", 440, 750, 300);
+     text("during thanksgiving", 500, 950);
+
 }
