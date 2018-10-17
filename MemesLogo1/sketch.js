@@ -2,35 +2,35 @@ function setup() {
     createCanvas(1100, 600);
 }
 
+var Cheetah; // global
 var Deer; // global
 
-
 function preload() {
+    Cheetah = loadImage("Cheetah.jpg")
     Deer = loadImage("Deer.jpg")
 }
 
-function draw() {
-    
-    
-
-//    textAlign(CENTER, CENTER);
-//    textSize(45);
-//    textFont("Comic Sans MS");
-//    text("When you they say food is done", 440, 750, 300);
-//     text("during thanksgiving", 500, 950);
-
-
-    
+function draw() { 
     background(0);
-
-    if(mouseY > height/2) {
-        image(Deer, 0, 0, width/2, height/2);
-
-image(Deer, width/2, 0, width/2, height);
     
+    
+    if(mouseY > height/2) {
+        image(Cheetah, 0, 0, width/2, height/2);
         fill(255);
-        text("When you they say food is done", 200, 250, 300);
-        text("during thanksgiving", 200 , 345);
+        text("When hear your homies arguing", 100, 400, 300);
+        text("and now you guys are fighting", 100 , 500);
         textSize(35);
     }
+        
+    if(mouseX > height/2) {
+        image(Deer, width/2, 0, width/2, height/2);
+        fill(255);
+        text("When person that you were fighting for says ", 600, 400, 300);
+        text("there was no reason for", 600 , 525);
+        text("us to be fighting",600 , 575);
+        text("it wasnt that serious", 600, 700);
+        textSize(35);
+    
+    }
+    
 }
