@@ -2,12 +2,12 @@ function setup() {
     createCanvas(1100, 600);
 }
 
-var Cheetah; // global
-var Deer; // global
+var cheetah; // global
+var deer; // global
 
 function preload() {
-    Cheetah = loadImage("Cheetah.jpg")
-    Deer = loadImage("Deer.jpg")
+    Cheetah = loadImage("cheetah.jpg")
+    Deer = loadImage("deer.jpg")
 }
 
 function draw() { 
