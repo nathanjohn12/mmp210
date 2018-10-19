@@ -6,7 +6,7 @@ var lion; // global
 var pride; //global
 
 function preload() {
-    lion = loadImage("Lion.jpg")
+    lion = loadImage("lion.jpg")
 }
 
 function draw() {
