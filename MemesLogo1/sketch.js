@@ -8,8 +8,8 @@ var imageX = -50;
 var image2x = 1000; 
 
 function preload() {
-    Cheetah = loadImage("cheetah.jpg")
-    Deer = loadImage("deer.jpg")
+    cheetah = loadImage("cheetah.jpg")
+    deer = loadImage("deer.jpg")
 }
 
 function draw() { 
@@ -17,7 +17,7 @@ function draw() {
     
     
     if(mouseY > height/2) {
-        image(Cheetah, imageX, 0, width/2, height/2);
+        image(cheetah, imageX, 0, width/2, height/2);
 
         imageX++;
         console.log(imageX);
@@ -35,7 +35,7 @@ function draw() {
     }
         
     if(mouseX > height/2) {
-        image(Deer, image2x, 0, width/2, height/2);
+        image(deer, image2x, 0, width/2, height/2);
         
         image2x--;
         console.log(image2x)
